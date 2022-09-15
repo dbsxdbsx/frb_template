@@ -6,23 +6,8 @@ import 'dart:convert';
 import 'dart:async';
 import 'package:flutter_rust_bridge/flutter_rust_bridge.dart';
 
-abstract class Native {
-  Future<Platform> platform({dynamic hint});
+abstract class Api_2 {
+  Future<void> testPrint2({required String log, dynamic hint});
 
-  FlutterRustBridgeTaskConstMeta get kPlatformConstMeta;
-
-  Future<bool> rustReleaseMode({dynamic hint});
-
-  FlutterRustBridgeTaskConstMeta get kRustReleaseModeConstMeta;
-}
-
-enum Platform {
-  Unknown,
-  Android,
-  Ios,
-  Windows,
-  Unix,
-  MacIntel,
-  MacApple,
-  Wasm,
+  FlutterRustBridgeTaskConstMeta get kTestPrint2ConstMeta;
 }

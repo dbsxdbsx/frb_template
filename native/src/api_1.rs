@@ -57,3 +57,7 @@ pub fn platform() -> Platform {
 pub fn rust_release_mode() -> bool {
     cfg!(not(debug_assertions))
 }
+
+pub fn test_print_1(log: String) {
+    println!("{}", log);
+}
